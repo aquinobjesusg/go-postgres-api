@@ -12,21 +12,25 @@
 *.test
 
 # Code coverage profiles and other test artifacts
-*.out
-coverage.*
-*.coverprofile
-profile.cov
+#*.out
+#coverage.*
+#*.coverprofile
+#profile.cov
 
 # Dependency directories (remove the comment below to include it)
-# vendor/
+vendor/
+node_modules/
 
 # Go workspace file
-go.work
-go.work.sum
+#go.work
+#go.work.sum
 
 # env file
 .env
 
 # Editor/IDE
-# .idea/
-# .vscode/
+.idea/
+.vscode/
+.project/
+.classpath
+nbproject/
