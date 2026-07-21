@@ -4,6 +4,9 @@
 - Ejecuta la Instruccion
 go run main.go
 
+- Utilizar las Siguientes URLS
+http://localhost:8080/users
+http://localhost:8080/users/:id
 
 
 
