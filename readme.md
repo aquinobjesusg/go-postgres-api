@@ -1,3 +1,18 @@
+# Instrucciones
+- Instalar GoLand
+
+- Ejecuta la Instruccion
+go run main.go
+
+
+
+
+
+
+
+
+
+
 # Crear el directorio del proyecto
 mkdir go-postgres-api
 cd go-postgres-api
