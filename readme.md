@@ -11,8 +11,8 @@ go get -u gorm.io/gorm
 go get -u gorm.io/driver/postgres
 go get -u github.com/gin-contrib/cors
 
-	// http://localhost:8080/users
-	// http://localhost:8080/users/:id
+// http://localhost:8080/users
+// http://localhost:8080/users/:id
 
 // main.go
 package main

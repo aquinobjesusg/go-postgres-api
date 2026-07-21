@@ -15,6 +15,7 @@ func main() {
 
 	// 2. Migrar los modelos
 	config.DB.AutoMigrate(&models.User{})
+	config.DB.AutoMigrate(&models.Roles{})
 
 	// 3. Configurar el router de Gin
 	router := gin.Default()
@@ -39,11 +40,19 @@ func main() {
 	// http://localhost:8080/users
 	// http://localhost:8080/users/:id
 	// 4. Definir las rutas de la API
+	// Usuarios
 	router.POST("/users", controllers.CreateUser)
 	router.GET("/users", controllers.GetUsers)
 	router.GET("/users/:id", controllers.GetUserByID)
 	router.PUT("/users/:id", controllers.UpdateUser)
 	router.DELETE("/users/:id", controllers.DeleteUser)
+
+	// Roles
+	router.POST("/roles", controllers.Create)
+	router.GET("/roles", controllers.Get)
+	router.GET("/roles/:id", controllers.GetByID)
+	router.PUT("/roles/:id", controllers.Update)
+	router.DELETE("/roles/:id", controllers.Delete)
 
 	// 5. Iniciar el servidor en el puerto 8080
 	log.Println("Servidor iniciado en http://localhost:8080")

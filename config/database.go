@@ -14,7 +14,7 @@ var DB *gorm.DB
 
 func ConnectDatabase() {
 	// Reemplaza con tus credenciales de Postgres
-	dsn := "host=localhost user=go-postgres-api password=go-postgres-api dbname=go-postgres-api port=5432 sslmode=disable TimeZone=America/Caracas"
+	dsn := "host=localhost user=sdp1 password=sdp1 dbname=sdp1 port=5432 sslmode=disable TimeZone=America/Caracas"
 
 	database, err := gorm.Open(postgres.Open(dsn), &gorm.Config{})
 	if err != nil {
